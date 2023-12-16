@@ -1,0 +1,314 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилі для контейнера сторінки */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стилі для контейнера іконки та форми */
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* Стилі для кнопки з іконкою */
+.toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+}
+/* Стилі для вікна реєстрації/входу */
+.form-container {
+    display: none;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(83, 70, 70, 0.8); /* затемнення */
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0e0d0d;
+}
+
+/* Стилі для блоку з формою входу/реєстрації */
+#loginForm, #registerForm {
+    display: none;
+}
+
+/* Стилі для іконки */
+.toggle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+
+/* Стилі для текстового блоку */
+.text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Стилі для посилань у реєстраційному блоку */
+#registrationForm a {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+          /* Загальні стилі для сторінки */
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Стилі для верхнього колонтитулу */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Стилі для переключення темного режиму */
+        .dark-mode-toggle {
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            font-size: 20px;
+        }
+
+        #sun, #moon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        /* Стилі для розділу з взуттям */
+        section {
+            padding: 80px;
+        }
+
+        /* Стилі для карточок товарів */
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Стилі для нижнього колонтитулу */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+    
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Стилі для вікна реєстрації/входу */
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Стилі для контейнера з іконкою та формою */
+        .toggle-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* Стилі для кнопки з іконкою */
+        .toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        /* Стилі для іконки */
+        .toggle img {
+            width: 50px;
+            height: 50px;
+        }
+
+/* Стилі для вікна реєстрації/входу */
+.form-container {
+    display: none;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(83, 70, 70, 0.8); /* затемнення */
+    border-radius: 5px;
+    color: #fff;
+
+    /* Оновлено стилі для вирівнювання */
+    margin: auto;
+    margin-top: 50px; 
+    z-index: 1;/* Змінено відстань від верхньої границі на 50px */
+}
+#login,
+#password {
+    margin-bottom: 10px; /* Відступ від нижнього краю елемента */
+    width: 100%;
+    padding: 10px; /* Внутрішній відступ */
+    box-sizing: border-box; /* Зберігає обчислення ширини/висоти включаючи padding і border */
+}
+/* Стилі для форми реєстрації */
+#registerLogin,
+#registerPassword {
+    margin-bottom: 10px; /* Відступ від нижнього краю елемента */
+    width: 100%;
+    padding: 10px; /* Внутрішній відступ */
+    box-sizing: border-box; /* Зберігає обчислення ширини/висоти включаючи padding і border */
+}
+
+#loginForm, #registerForm {
+    display: none;
+}
+
+/* Оновлено стилі для успішного повідомлення */
+#successMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+        /* Стилі для текстового блоку */
+        .text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        /* Стилі для посилань в реєстраційному блоку */
+        #registrationForm a {
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        /* Стилі для повідомлення про успішну реєстрацію */
+#successMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Змінені стилі для контейнера з фото взуття */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Змініть ширину елементів .product на бажану відстань (у прикладі відступ -20px) */
+    box-sizing: border-box;
+    margin-top: 10px; /* Додано, щоб враховувати padding у визначенні ширини */
+}
+
+/* Змінені стилі для фото внутрішньо в контейнері */
+.product img {
+    max-width: 100%; /* Зробить фото адаптивним до розміру батьківського контейнера */
+    height: auto;
+    margin-bottom: 0px; /* Відступ зверху */
+}
+
+
+/* Стилі для SALE-кнопки */
+.sale-btn {
+    color: red;
+}
+
+/* Стилі для загального контейнера */
+.container {
+    position: relative;
+}
+
+/* Зміни для елемента <h2> "Каталог товарів" */
+.catalog-header {
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    background-color: #333;
+    color: white; /* Колір тексту */
+    padding: 4px;
+}
+
+/* Стилі для елементів меню (Бренди, Новини, SALE) */
+header nav {
+    position: absolute;
+    left: 90px; /* Змінено відстань від лівого краю на 90px */
+    top: 30px; /* Змінено відстань від верхньої границі на 30px */
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    color: white;
+    margin-right: 30px; /* Змінено відстань між елементами на 20px */
+    text-decoration: none;
+}
+
+.sale-btn {
+    color: red; /* Колір SALE-кнопки */
+}
+
+
+/* Змінені стилі для контейнера з фото взуття */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px; /* Додано відступ вгору на 20px */
+}
+
